@@ -4,13 +4,13 @@
 # - display minutes from 0 to 59
 
 hours="0"
-seconds="0"
+seconds="1"
 while [ $hours -le 12 ]; do
     echo "Hour: $hours"
     while [ $seconds -le 59 ]; do
         echo "$seconds"
         seconds=$((seconds+1))
     done
-    seconds="0"
+    seconds="1"
     hours=$((hours+1))
 done
